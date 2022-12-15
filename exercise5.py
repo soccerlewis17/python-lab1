@@ -12,4 +12,14 @@
 #      term: 5 / number: 5
 #      etc.
 
-# Hint: The next number is found by adding the two numbers before it
+terms = (range(50))
+first_number = 0
+second_number = 1
+for term in terms:
+    if term < 2:
+        print(f'term: {term} / number: {term}')
+    else:
+        new_number = first_number + second_number
+        print(f'term: {term} / number: {new_number}')
+        first_number = second_number
+        second_number = new_number
